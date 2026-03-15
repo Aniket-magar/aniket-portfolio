@@ -3,23 +3,40 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/index.css" />
-  <link rel="icon" href="/assets/aniket-logo2.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aniket Magar</title>
+
+  <link rel="icon" href="assets/aniket-logo2.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header class="hd-1">
-    <a href="index.html"><img src="/assets/aniket-logo2.png" alt="aniket-logo" class="logo" /></a>
-    <div class="nav-1">
+    <a href="index.html">
+      <img src="/assets/aniket-logo2.png" alt="aniket-logo" class="logo" />
+    </a>
+
+    <!-- Hamburger Button (mobile) -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-1" id="mainNav">
       <ul>
         <li><a href="#profile-container">Home</a></li>
         <li><a href="#about-section">About</a></li>
@@ -28,26 +45,28 @@
         <li><a href="">Achievements</a></li>
         <li><a href="#contact-section">Contact</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
+  <!-- ===== HERO / PROFILE ===== -->
   <div class="profile-container" id="profile-container">
     <div class="profile-text">
       <p class="name-1">Hello, I'm <b style="color: #A12E3E;">Aniket Magar.</b></p>
       <p class="description">
         Aspiring Full Stack Web Developer, currently training at SevenMentor,
-        Pune.<b style="color: rgb(195, 38, 38);"> Diploma in Computer Engineering.</b> Passionate about creating
+        Pune. <b style="color: rgb(195, 38, 38);">Diploma in Computer Engineering.</b> Passionate about creating
         real-world digital solutions.
       </p>
-      <a href="#contact" class="contact-btn">Get In Touch</a>
+      <a href="#contact-section" class="contact-btn">Get In Touch</a>
     </div>
     <div class="profile-pic">
       <img src="/assets/aniket3.jpeg" alt="Profile Picture" />
     </div>
   </div>
+
+  <!-- ===== ABOUT ===== -->
   <div class="about-section" id="about-section">
     <p class="heading-1">ABOUT ME</p>
-    <br />
     <p class="about-me">
       Welcome to my professional portfolio! I'm Aniket, a Computer Engineering
       diploma graduate from MIT Polytechnic, Chhatrapati Sambhajinagar. I
@@ -56,444 +75,320 @@
       reflection of my passion, learning journey, and ambition to grow in the
       tech industry. I'm currently exploring opportunities to apply my
       knowledge, contribute to real-world projects, and continue developing as
-      a full stack web developer. Thank you for visiting feel free to
+      a full stack web developer. Thank you for visiting — feel free to
       explore and get in touch!
     </p>
 
-
-    <h2 class="bp-title"><i class="fa-solid fa-angles-right"></i>&nbsp;EDUCATION & <span>TRAINING</span></h2>
+    <h2 class="bp-title"><i class="fa-solid fa-angles-right"></i>&nbsp;EDUCATION &amp; <span>TRAINING</span></h2>
 
     <div class="bp-container">
+      
       <div class="bp-card">
-        <div class="bp-arrow bp-a"><i class="fa-solid fa-school"></i></div>
+        <div class="bp-arrow bp-a"><i class="fa-solid fa-graduation-cap"></i></div>
         <div class="bp-content">
-          <h3>SCHOOL</h3>
-          <p><b style="color:black">BOARD:</b> SSC</p>
-          <p><b style="color:black">SCHOOL:</b><b style="color: #e74c3c;"> DVS SCHOOL KOPERKHAIRANE, NAVI MUMBAI</b></p>
-          <p><b style="color:black">PERCENTAGE:</b> 88.80</p>
+          <h3>DEGREE IN BTECH</h3>
+          <p><b style="color:black">UNIVERSITY:</b>DBATU </p>
+          <p><b style="color:black">COLLEGE NAME:</b> <b style="color:#e74c3c;">DEOGIRI COLLEGE OF  CHH. SAMBHAJINAGAR</b></p>
+          <p><b style="color:black">PERSUING:</b> SECOND YEAR</p>
         </div>
       </div>
-
+      
+      
       <div class="bp-card">
         <div class="bp-arrow bp-b"><i class="fa-solid fa-graduation-cap"></i></div>
         <div class="bp-content">
           <h3>DIPLOMA</h3>
           <p><b style="color:black">BOARD:</b> MSBTE</p>
-          <p><b style="color:black">COLLEGE NAME:</b><b style="color:#e67e22;"> MIT POLYTECHNIC CHH. SAMBHAJINAGAR</b>
-          </p>
-          <p><b style="color:black">PERCENTAGE:</b> 89.14% </p>
+          <p><b style="color:black">COLLEGE NAME:</b> <b style="color:#e67e22;">MIT POLYTECHNIC CHH. SAMBHAJINAGAR</b></p>
+          <p><b style="color:black">PERCENTAGE:</b> 89.14%</p>
         </div>
       </div>
 
       <div class="bp-card">
         <div class="bp-arrow bp-c"><i class="fa-solid fa-laptop-code"></i></div>
         <div class="bp-content">
-          <h3>INTERNSHIP & TRAINING</h3>
-          <p><b style="color:black">COMPONY NAME:</b> <b style="color: #f39c12;"> JUST LOGIC PVT LTD</b></p>
-          <p><b style="color:black">TYPE:</b> SOFTWARE COMPONY </p>
+          <h3>INTERNSHIP &amp; TRAINING</h3>
+          <p><b style="color:black">COMPANY NAME:</b> <b style="color: #f39c12;">JUST LOGIC PVT LTD</b></p>
+          <p><b style="color:black">TYPE:</b> SOFTWARE COMPANY</p>
           <p><b style="color:black">DURATION:</b> 2 MONTHS</p>
         </div>
       </div>
-
+      
       <div class="bp-card">
         <div class="bp-arrow bp-d"><i class="fa-solid fa-laptop-code"></i></div>
         <div class="bp-content">
           <h3>INTERNSHIP AND TRAINING</h3>
-          <p><b style="color:black">NAME:</b><b style="color:#1db45b;"> SEVENMENTOR</p>
+          <p><b style="color:black">NAME:</b> <b style="color:#1db45b;">SEVENMENTOR</b></p>
           <p><b style="color:black">TYPE:</b> WEB DEVELOPMENT</p>
-          <p><b style="color:black">DURATION:</b> 6 TO 8 MONTHS </p>
-          <p><b style="color:black">PURSUINING</b>1</p>
+          <p><b style="color:black">DURATION:</b> 6 TO 8 MONTHS</p>
+          <p><b style="color:black">STATUS:</b> PURSUING</p>
         </div>
       </div>
+      
+      <!-- <div class="bp-card">
+        <div class="bp-arrow bp-a"><i class="fa-solid fa-school"></i></div>
+        <div class="bp-content">
+          <h3>SCHOOL</h3>
+          <p><b style="color:black">BOARD:</b> SSC</p>
+          <p><b style="color:black">SCHOOL:</b> <b style="color: #e74c3c;">DVS SCHOOL KOPERKHAIRANE, NAVI MUMBAI</b></p>
+          <p><b style="color:black">PERCENTAGE:</b> 88.80</p>
+        </div>
+      </div> -->
 
     </div>
   </div>
 
+  <!-- ===== SKILLS ===== -->
   <div class="skill-section" id="skill-section">
     <p class="heading-3">SKILLS</p>
-    <br>
+
     <div class="skill-chart-list">
-      <h1><i class="fa-solid fa-thumbs-up"></i>&nbsp;FRONTED LANGAUGES</h1>
-      <table>
-        <div class="d1">
-          <tr>
-            <td><i class="fa-solid fa-code"></i></td>
-            <td>&nbsp;&nbsp;<b>HTML</b></td>
-            <td>
-              <p class="d1-loader1"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>98%</b></div>
-        </td>
-        <td>
-          <div class="html-skill-dropdown"><button></button></div>
-        </td>
-        <div class="d2">
-          <tr>
-            <td><i class="fa-brands fa-css"></i></td>
-            <td>&nbsp;&nbsp;<b>CSS</b></td>
-            <td>
-              <p class="d1-loader2"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>85%</b></div>
-        </td>
-        <td>
-          <div class="css-skill-dropdown"></div>
-        </td>
-        <div class="d3">
-          <tr>
-            <td><i class="fa-brands fa-js"></i></td>
-            <td>&nbsp;&nbsp;<b>JAVASCRIPT</b></td>
-            <td>
-              <p class="d1-loader3"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>70%</b></div>
-        </td>
-        <td>
-          <div class="js-skill-dropdown"></div>
-        </td>
-        <div class="d4">
-          <tr>
-            <td><i class="fa-brands fa-bootstrap"></i></td>
-            <td>&nbsp;&nbsp;<b>BOOTSTRAP</b></td>
-            <td>
-              <p class="d1-loader4"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>70%</b></div>
-        </td>
-        <td>
-          <div class="bs-skill-dropdown"></div>
-        </td>
-        <div class="d5">
-          <tr>
-            <td><i class="fa-solid fa-laptop-code"></i></td>
-            <td>&nbsp;&nbsp;<b>JQUERY</b></td>
-            <td>
-              <p class="d1-loader5"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>10%</b></div>
-        </td>
-        <td>
-          <div class="jq-skill-dropdown"></div>
-        </td>
-        <div class="d6">
-          <tr>
-            <td><i class="fa-brands fa-react"></i></td>
-            <td>&nbsp;&nbsp;<b>REACT</b></td>
-            <td>
-              <p class="d1-loader6"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>10%</b></div>
-        </td>
-        <td>
-          <div class="react-skill-dropdown"></div>
-        </td>
-        <div class="d7">
-          <tr>
-            <td><i class="fa-brands fa-angular"></i></td>
-            <td>&nbsp;&nbsp;<b>ANGULAR</b></td>
-            <td>
-              <p class="d1-loader7"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>10%</b></div>
-        </td>
-        <td>
-          <div class="angular-skill-dropdown"></div>
-        </td>
-      </table>
-      <br><br><br>
-      <h1><i class="fa-solid fa-thumbs-up"></i>&nbsp;BACKEND LANGAUGES</h1>
-      <table>
-        <div class="d1">
-          <tr>
-            <td><i class="fa-solid fa-c"></i></td>
-            <td>&nbsp;&nbsp;<b>C</b></td>
-            <td>
-              <p class="b1-loader1"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>98%</b></div>
-        </td>
-        <td>
-          <div class="jq-skill-dropdown"></div>
-        </td>
-        <div class="d2">
-          <tr>
-            <td><i class="fa-solid fa-laptop-code"></i></td>
-            <td>&nbsp;&nbsp;<b>C++</b></td>
-            <td>
-              <p class="b1-loader2"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>95%</b></div>
-        </td>
-        <td>
-          <div class="react-skill-dropdown"></div>
-        </td>
-        <div class="d3">
-          <tr>
-            <td><i class="fa-brands fa-php"></i></td>
-            <td>&nbsp;&nbsp;<b>PHP</b></td>
-            <td>
-              <p class="b1-loader3"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>85%</b></div>
-        </td>
-        <td>
-          <div class="html-skill-dropdown"><button></button></div>
-        </td>
-        <div class="d4">
-          <tr>
-            <td><i class="fa-brands fa-java"></i></td>
-            <td>&nbsp;&nbsp;<b>JAVA</b></td>
-            <td>
-              <p class="b1-loader4"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>70%</b></div>
-        </td>
-        <td>
-          <div class="bs-skill-dropdown"></div>
-        </td>
-        <div class="d5">
-          <tr>
-            <td><i class="fa-brands fa-python"></i></td>
-            <td>&nbsp;&nbsp;<b>PYTHON</b></td>
-            <td>
-              <p class="b1-loader5"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>85%</b></div>
-        </td>
-        <td>
-          <div class="css-skill-dropdown"></div>
-        </td>
-        <div class="d6">
-          <tr>
-            <td><i class="fa-brands fa-java"></i></td>
-            <td>&nbsp;&nbsp;<b>ADVANCE JAVA</b></td>
-            <td>
-              <p class="b1-loader6"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>25%</b></div>
-        </td>
-        <td>
-          <div class="angular-skill-dropdown"></div>
-        </td>
-        <div class="d7">
-          <tr>
-            <td><i class="fa-brands fa-node-js"></i></td>
-            <td>&nbsp;&nbsp;<b>NODE JS</b></td>
-            <td>
-              <p class="b1-loader7"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>10%</b></div>
-        </td>
-        <td>
-          <div class="js-skill-dropdown"></div>
-        </td>
-        <div class="d8">
-          <tr>
-            <td><i class="fa-brands fa-c"></i></td>
-            <td>&nbsp;&nbsp;<b>c#</b></td>
-            <td>
-              <p class="b1-loader8"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>10%</b></div>
-        </td>
-        <td>
-          <div class="angular-skill-dropdown"></div>
-        </td>
-      </table>
 
-      <br><br><br>
+      <!-- Frontend -->
+      <h1 class="skill-heading"><i class="fa-solid fa-thumbs-up"></i>&nbsp;FRONTEND LANGUAGES</h1>
+      <div class="skills-table">
 
-      <h1><i class="fa-solid fa-thumbs-up"></i>&nbsp;DATABASE</h1>
-      <table>
-        <div class="d1">
-          <tr>
-            <td><i class="fa-solid fa-database"></i></td>
-            <td>&nbsp;&nbsp;<b>MySQL</b></td>
-            <td>
-              <p class="db1-loader1"></p>
-            </td>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-code"></i> <b>HTML</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:98%"></div>
+          </div>
+          <div class="skill-percentage"><b>98%</b></div>
         </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>75%</b></div>
-        </td>
-        <td>
-          <div class="jq-skill-dropdown"></div>
-        </td>
-        <div class="d2">
-          <tr>
-            <td><i class="fa-solid fa-folder-open"></i></td>
-            <td>&nbsp;&nbsp;<b>MONGODB</b></td>
-            <td>
-              <p class="db1-loader2"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>5%</b></div>
-        </td>
-        <td>
-          <div class="react-skill-dropdown"></div>
-        </td>
-        <div class="d3">
-          <tr>
-            <td><i class="fa-solid fa-server"></i></td>
-            <td>&nbsp;&nbsp;<b>SQLITE</b></td>
-            <td>
-              <p class="db1-loader3"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>5%</b></div>
-        </td>
-        <td>
-          <div class="html-skill-dropdown"><button></button></div>
-        </td>
-        <div class="d4">
-          <tr>
-            <td><i class="fa-solid fa-file-lines"></i></td>
-            <td>&nbsp;&nbsp;<b>FIREBASE</b></td>
-            <td>
-              <p class="db1-loader4"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>5%</b></div>
-        </td>
-        <td>
-          <div class="bs-skill-dropdown"></div>
-        </td>
-        <div class="d5">
-          <tr>
-            <td><i class="fa-solid fa-folder-closed"></i></td>
-            <td>&nbsp;&nbsp;<b>ORACLE DB</b></td>
-            <td>
-              <p class="db1-loader5"></p>
-            </td>
-        </div>
-        <td>
-          <div class="skill-percentage">&nbsp;<b>5%</b></div>
-        </td>
-        <td>
-          <div class="css-skill-dropdown"></div>
-        </td>
-      </table>
 
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-css3-alt"></i> <b>CSS</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:85%"></div>
+          </div>
+          <div class="skill-percentage"><b>85%</b></div>
+        </div>
 
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-js"></i> <b>JAVASCRIPT</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:70%"></div>
+          </div>
+          <div class="skill-percentage"><b>70%</b></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-bootstrap"></i> <b>BOOTSTRAP</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:70%"></div>
+          </div>
+          <div class="skill-percentage"><b>70%</b></div>
+        </div>
+<!-- 
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-laptop-code"></i> <b>JQUERY</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:10%"></div>
+          </div>
+          <div class="skill-percentage"><b>10%</b></div>
+        </div> -->
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-react"></i> <b>REACT</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:10%"></div>
+          </div>
+          <div class="skill-percentage"><b>10%</b></div>
+        </div> -->
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-angular"></i> <b>ANGULAR</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:10%"></div>
+          </div>
+          <div class="skill-percentage"><b>10%</b></div>
+        </div> -->
+
+      </div>
+
+      <!-- Backend -->
+      <h1 class="skill-heading"><i class="fa-solid fa-thumbs-up"></i>&nbsp;BACKEND LANGUAGES</h1>
+      <div class="skills-table">
+
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-c"></i> <b>C</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:98%"></div>
+          </div>
+          <div class="skill-percentage"><b>98%</b></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-laptop-code"></i> <b>C++</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:95%"></div>
+          </div>
+          <div class="skill-percentage"><b>95%</b></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-php"></i> <b>PHP</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:85%"></div>
+          </div>
+          <div class="skill-percentage"><b>85%</b></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-java"></i> <b>JAVA</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:70%"></div>
+          </div>
+          <div class="skill-percentage"><b>70%</b></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-python"></i> <b>PYTHON</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:85%"></div>
+          </div>
+          <div class="skill-percentage"><b>85%</b></div>
+        </div>
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-java"></i> <b>ADV. JAVA</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:25%"></div>
+          </div>
+          <div class="skill-percentage"><b>25%</b></div>
+        </div> -->
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-node-js"></i> <b>NODE JS</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:10%"></div>
+          </div>
+          <div class="skill-percentage"><b>10%</b></div>
+        </div> -->
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-hashtag"></i> <b>C#</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:10%"></div>
+          </div>
+          <div class="skill-percentage"><b>10%</b></div>
+        </div> -->
+
+      </div>
+
+      <!-- Database -->
+      <h1 class="skill-heading"><i class="fa-solid fa-thumbs-up"></i>&nbsp;DATABASE</h1>
+      <div class="skills-table">
+
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-database"></i> <b>MySQL</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:75%"></div>
+          </div>
+          <div class="skill-percentage"><b>75%</b></div>
+        </div>
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-folder-open"></i> <b>MONGODB</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:5%"></div>
+          </div>
+          <div class="skill-percentage"><b>5%</b></div>
+        </div> -->
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-server"></i> <b>SQLITE</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:5%"></div>
+          </div>
+          <div class="skill-percentage"><b>5%</b></div>
+        </div> -->
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-file-lines"></i> <b>FIREBASE</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:5%"></div>
+          </div>
+          <div class="skill-percentage"><b>5%</b></div>
+        </div> -->
+
+        <!-- <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-folder-closed"></i> <b>ORACLE DB</b></div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width:5%"></div>
+          </div>
+          <div class="skill-percentage"><b>5%</b></div>
+        </div> -->
+
+      </div>
     </div>
-
   </div>
 
-
+  <!-- ===== PROJECTS ===== -->
   <div class="projects-section" id="projects-section">
-
     <p class="heading-2">PROJECTS</p>
-    <br />
+
     <div class="project">
+
+      <!-- Project 1 -->
       <div class="pr-1">
         <div class="info-section">
-          <p class="pr-1-p"><i class="fa-solid fa-seedling"></i><b class="b1" style="color: black;"> SMART AGRICULTURE
-              WEBSITE</b></p>
-          <div class="info-div"><button class="more-info" id="more-info" onclick="showDiv()">more information<i
-                class="fa-solid fa-caret-down"></i></button></div>
+          <p class="pr-1-p"><i class="fa-solid fa-seedling"></i> <b class="b1" style="color: black;">SMART AGRICULTURE WEBSITE</b></p>
+          <div class="info-div">
+            <button class="more-info" id="more-info" onclick="showDiv()">more information <i class="fa-solid fa-caret-down"></i></button>
+          </div>
           <div id="hiddenDiv" class="agri-info">
-            <div class="technology"><button class="tech-btn tech-btn-fr">FRONTED<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;HTML,&nbsp; </p>
-              <p class="tech-p">&nbsp;CSS,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-bk">BACKEND<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;PHP,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-lb">LIBRARIES<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;BOOTSTRAP&nbsp;</p><button class="tech-btn tech-btn-db">DATABASE<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;MySQL&nbsp;</p>
+            <div class="technology">
+              <button class="tech-btn tech-btn-fr">FRONTEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">HTML, CSS, JavaScript</span>
+              <button class="tech-btn tech-btn-bk">BACKEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">PHP, JavaScript</span>
+              <button class="tech-btn tech-btn-lb">LIBRARIES <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">Bootstrap</span>
+              <button class="tech-btn tech-btn-db">DATABASE <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">MySQL</span>
             </div>
-            <!-- <div class="pr-info"><p style="color:darkgray;font-family: cursive;margin-bottom: 4px;"><b style="color:#A12E3E ;">SHORT DESCRIPTION:</b> Agristuff is a comprehensive agriculture platform designed to empower farmers with smart solutions. From booking harvesting machines to checking real-time weather forecasts, accessing farming guides, and exploring agri-products — everything you need is in one place to support modern, efficient farming.</p></div> -->
             <ul class="pr-list-info">
-              <li>Dynamic <b style="color:rgb(232, 61, 9);">Machine booking system</b> with availability checking and
-                contact options.</li>
-              <li>Implemented <b style="color:rgb(232, 61, 9);">Admin Dashboard </b> CRUD operations for products,
-                users, and machine listings.</li>
-              <li><b style="color:rgb(232, 61, 9);">User authentication system</b> with secure login and session
-                handling.</li>
+              <li>Dynamic <b style="color:rgb(232, 61, 9);">Machine booking system</b> with availability checking and contact options.</li>
+              <li>Implemented <b style="color:rgb(232, 61, 9);">Admin Dashboard</b> CRUD operations for products, users, and machine listings.</li>
+              <li><b style="color:rgb(232, 61, 9);">User authentication system</b> with secure login and session handling.</li>
               <li>Responsive Website</li>
-              <li><b style="color:rgb(232, 61, 9);">Integrated OpenWeatherMap API</b> to display real-time weather for
-                any location.</li>
-              <li>weather-based farming recommendations</li>
+              <li><b style="color:rgb(232, 61, 9);">Integrated OpenWeatherMap API</b> to display real-time weather for any location.</li>
+              <li>Weather-based farming recommendations</li>
               <li>E-commerce Style Product Management</li>
               <li>Farmer's guide section</li>
             </ul>
-
-
-
             <div class="image-section-1">
               <img src="/assets/agri/img1.jpg" alt="img" id="cr-img1" class="active">
               <img src="/assets/agri/img2.jpg" alt="img" id="cr-img2">
               <img src="/assets/agri/img3.jpg" alt="img" id="cr-img3">
               <img src="/assets/agri/img4.jpg" alt="img" id="cr-img4">
               <img src="/assets/agri/img5.jpg" alt="img" id="cr-img5">
-              <!-- <img src="/assets/agri/img6.jpg" alt="img" id="cr-img6"> -->
-
-
             </div>
           </div>
         </div>
       </div>
 
-
+      <!-- Project 2 -->
       <div class="pr-2">
         <div class="info-section">
-          <p class="pr-2-p"><i class="fa-brands fa-apple"></i><b class="b1" style="color: black;"> E COMMERSE WEBSITE
-              FOR APPLE PRODUCTS</b></p>
-          <div class="info-div"><button class="more-info" id="more-info1" onclick="showDiv1()">more information<i
-                class="fa-solid fa-caret-down"></i></button></div>
-          <!-- <div class="pr-info"><p style="color:darkgray;font-family: cursive;margin-bottom: 4px;"><b style="color:#A12E3E ;">SHORT DESCRIPTION:</b> Agristuff is a comprehensive agriculture platform designed to empower farmers with smart solutions. From booking harvesting machines to checking real-time weather forecasts, accessing farming guides, and exploring agri-products — everything you need is in one place to support modern, efficient farming.</p></div> -->
+          <p class="pr-2-p"><i class="fa-brands fa-apple"></i> <b class="b1" style="color: black;">E-COMMERCE WEBSITE FOR APPLE PRODUCTS</b></p>
+          <div class="info-div">
+            <button class="more-info" id="more-info1" onclick="showDiv1()">more information <i class="fa-solid fa-caret-down"></i></button>
+          </div>
           <div id="hiddenDiv1" class="apple-info">
-            <div class="technology"><button class="tech-btn tech-btn-fr">FRONTED<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;HTML,&nbsp; </p>
-              <p class="tech-p">&nbsp;CSS,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-bk">BACKEND<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;PHP,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-lb">LIBRARIES<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;BOOTSTRAP&nbsp;</p><button class="tech-btn tech-btn-db">DATABASE<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;MySQL&nbsp;</p>
+            <div class="technology">
+              <button class="tech-btn tech-btn-fr">FRONTEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">HTML, CSS, JavaScript</span>
+              <button class="tech-btn tech-btn-bk">BACKEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">PHP, JavaScript</span>
+              <button class="tech-btn tech-btn-lb">LIBRARIES <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">Bootstrap</span>
+              <button class="tech-btn tech-btn-db">DATABASE <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">MySQL</span>
             </div>
             <ul class="pr-list-info">
-              <li>Shopping cart & wishlist system</li>
+              <li>Shopping cart &amp; wishlist system</li>
               <li>Payment gateway integration</li>
               <li>Admin panel to add/update/delete products</li>
               <li>Customer reviews and ratings</li>
@@ -501,33 +396,30 @@
               <li>Responsive layout for tablet/mobile</li>
               <li>User dashboard with order history</li>
             </ul>
-
             <div class="image-section-2">
-              <img src="/assets/apple/img1.jpg" alt="img" id="cr-img1" class="active">
-              <img src="/assets/apple/img2.jpg" alt="img" id="cr-img2">
-              <img src="/assets/apple/img3.jpg" alt="img" id="cr-img3">
-              <img src="/assets/apple/img4.jpg" alt="img" id="cr-img4">
-              <img src="/assets/apple/img5.jpg" alt="img" id="cr-img5">
+              <img src="/assets/apple/img1.jpg" alt="img" class="active">
+              <img src="/assets/apple/img2.jpg" alt="img">
+              <img src="/assets/apple/img3.jpg" alt="img">
+              <img src="/assets/apple/img4.jpg" alt="img">
+              <img src="/assets/apple/img5.jpg" alt="img">
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Project 3 -->
       <div class="pr-3">
         <div class="info-section">
-          <p class="pr-3-p"><i class="fa-solid fa-home"></i><b class="b1" style="color: black;"> REAL ESTATE CLONE
-              WEBSITE</b></p>
-          <div class="info-div"><button class="more-info" id="more-info2" onclick="showDiv2()">more information<i
-                class="fa-solid fa-caret-down"></i></button></div>
-          <!-- <div class="pr-info"><p style="color:darkgray;font-family: cursive;margin-bottom: 4px;"><b style="color:#A12E3E ;">SHORT DESCRIPTION:</b> Agristuff is a comprehensive agriculture platform designed to empower farmers with smart solutions. From booking harvesting machines to checking real-time weather forecasts, accessing farming guides, and exploring agri-products — everything you need is in one place to support modern, efficient farming.</p></div> -->
+          <p class="pr-3-p"><i class="fa-solid fa-home"></i> <b class="b1" style="color: black;">REAL ESTATE CLONE WEBSITE</b></p>
+          <div class="info-div">
+            <button class="more-info" id="more-info2" onclick="showDiv2()">more information <i class="fa-solid fa-caret-down"></i></button>
+          </div>
           <div id="hiddenDiv2" class="estate-info">
-            <div class="technology"><button class="tech-btn tech-btn-fr">FRONTED<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;HTML,&nbsp; </p>
-              <p class="tech-p">&nbsp;CSS,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-bk"><button
-                  class="tech-btn tech-btn-lb">LIBRARIES<i class="fa-solid fa-arrow-right"></i></button>
-                <p class="tech-p">&nbsp;BOOTSTRAP&nbsp;</p>
+            <div class="technology">
+              <button class="tech-btn tech-btn-fr">FRONTEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">HTML, CSS, JavaScript</span>
+              <button class="tech-btn tech-btn-lb">LIBRARIES <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">Bootstrap</span>
             </div>
             <ul class="pr-list-info">
               <li>Implemented modular HTML/CSS structure for scalability and maintainability</li>
@@ -537,38 +429,33 @@
               <li>Integrated hover states and transition effects for improved interactivity</li>
               <li>Structured content for SEO-friendly markup</li>
             </ul>
-
             <div class="image-section-3">
-              <img src="/assets/madhuban/img1.jpg" alt="img" id="cr-img1" class="active">
-              <img src="/assets/madhuban/img2.jpg" alt="img" id="cr-img2">
-              <img src="/assets/madhuban/img3.jpg" alt="img" id="cr-img3">
-              <img src="/assets/madhuban/img4.jpg" alt="img" id="cr-img4">
-              <img src="/assets/madhuban/img5.jpg" alt="img" id="cr-img5">
-              <!-- <img src="/assets/madhuban/img6.jpg" alt="img" id="cr-img6"> -->
-
+              <img src="/assets/madhuban/img1.jpg" alt="img" class="active">
+              <img src="/assets/madhuban/img2.jpg" alt="img">
+              <img src="/assets/madhuban/img3.jpg" alt="img">
+              <img src="/assets/madhuban/img4.jpg" alt="img">
+              <img src="/assets/madhuban/img5.jpg" alt="img">
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Project 4 -->
       <div class="pr-4">
         <div class="info-section">
-          <p class="pr-4-p"><i class="fa-solid fa-home"></i><b class="b1" style="color: black;"> MEESHOW'S CLONE
-              WEBSITE</b></p>
-          <div class="info-div"><button class="more-info" id="more-info3" onclick="showDiv3()">more information<i
-                class="fa-solid fa-caret-down"></i></button></div>
-          <!-- <div class="pr-info"><p style="color:darkgray;font-family: cursive;margin-bottom: 4px;"><b style="color:#A12E3E ;">SHORT DESCRIPTION:</b> Agristuff is a comprehensive agriculture platform designed to empower farmers with smart solutions. From booking harvesting machines to checking real-time weather forecasts, accessing farming guides, and exploring agri-products — everything you need is in one place to support modern, efficient farming.</p></div> -->
+          <p class="pr-4-p"><i class="fa-solid fa-store"></i> <b class="b1" style="color: black;">MEESHOW'S CLONE WEBSITE</b></p>
+          <div class="info-div">
+            <button class="more-info" id="more-info3" onclick="showDiv3()">more information <i class="fa-solid fa-caret-down"></i></button>
+          </div>
           <div id="hiddenDiv3" class="meeshow-info">
-            <div class="technology"><button class="tech-btn tech-btn-fr">FRONTED<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;HTML,&nbsp; </p>
-              <p class="tech-p">&nbsp;CSS,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-lb">LIBRARIES<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;BOOTSTRAP&nbsp;</p>
+            <div class="technology">
+              <button class="tech-btn tech-btn-fr">FRONTEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">HTML, CSS, JavaScript</span>
+              <button class="tech-btn tech-btn-lb">LIBRARIES <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">Bootstrap</span>
             </div>
             <ul class="pr-list-info">
-              <li>Responsive UI using HTML, CSS & Bootstrap</li>
+              <li>Responsive UI using HTML, CSS &amp; Bootstrap</li>
               <li>Clean product card layouts with hover effects</li>
               <li>Mobile-friendly navbar with toggle menu</li>
               <li>Dynamic product display using JavaScript</li>
@@ -578,37 +465,33 @@
               <li>Attractive color scheme and smooth UX</li>
             </ul>
             <div class="image-section-4">
-              <img src="/assets/meeshow/img1.jpg" alt="img" id="cr-img1" class="active">
-              <img src="/assets/meeshow/img2.jpg" alt="img" id="cr-img2">
-              <img src="/assets/meeshow/img3.jpg" alt="img" id="cr-img3">
-              <img src="/assets/meeshow/img1.jpg" alt="img" id="cr-img4">
-              <img src="/assets/meeshow/img2.jpg" alt="img" id="cr-img5">
-              <!-- <img src="/assets/meeshow/img6.jpg" alt="img" id="cr-img6"> -->
+              <img src="/assets/meeshow/img1.jpg" alt="img" class="active">
+              <img src="/assets/meeshow/img2.jpg" alt="img">
+              <img src="/assets/meeshow/img3.jpg" alt="img">
+              <img src="/assets/meeshow/img1.jpg" alt="img">
+              <img src="/assets/meeshow/img2.jpg" alt="img">
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Project 5 -->
       <div class="pr-5">
         <div class="info-section">
-          <p class="pr-5-p"><i class="fa-solid fa-home"></i><b class="b1" style="color: black;"> ONLINE GROCERY STORE
-              WEBSITE</b></p>
-          <div class="info-div"><button class="more-info" id="more-info4" onclick="showDiv4()">more information<i
-                class="fa-solid fa-caret-down"></i></button></div>
-          <!-- <div class="pr-info"><p style="color:darkgray;font-family: cursive;margin-bottom: 4px;"><b style="color:#A12E3E ;">SHORT DESCRIPTION:</b> Agristuff is a comprehensive agriculture platform designed to empower farmers with smart solutions. From booking harvesting machines to checking real-time weather forecasts, accessing farming guides, and exploring agri-products — everything you need is in one place to support modern, efficient farming.</p></div> -->
+          <p class="pr-5-p"><i class="fa-solid fa-cart-shopping"></i> <b class="b1" style="color: black;">ONLINE GROCERY STORE WEBSITE</b></p>
+          <div class="info-div">
+            <button class="more-info" id="more-info4" onclick="showDiv4()">more information <i class="fa-solid fa-caret-down"></i></button>
+          </div>
           <div id="hiddenDiv4" class="grocery-info">
-            <div class="technology"><button class="tech-btn tech-btn-fr">FRONTED<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;HTML,&nbsp; </p>
-              <p class="tech-p">&nbsp;CSS,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-bk">BACKEND<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;PHP,&nbsp; </p>
-              <p class="tech-p">&nbsp;JAVASCRIPT &nbsp;</p><button class="tech-btn tech-btn-lb">LIBRARIES<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;BOOTSTRAP&nbsp;</p><button class="tech-btn tech-btn-db">DATABASE<i
-                  class="fa-solid fa-arrow-right"></i></button>
-              <p class="tech-p">&nbsp;MySQL&nbsp;</p>
+            <div class="technology">
+              <button class="tech-btn tech-btn-fr">FRONTEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">HTML, CSS, JavaScript</span>
+              <button class="tech-btn tech-btn-bk">BACKEND <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">PHP, JavaScript</span>
+              <button class="tech-btn tech-btn-lb">LIBRARIES <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">Bootstrap</span>
+              <button class="tech-btn tech-btn-db">DATABASE <i class="fa-solid fa-arrow-right"></i></button>
+              <span class="tech-p">MySQL</span>
             </div>
             <ul class="pr-list-info">
               <li>Fully responsive UI using HTML, CSS, Bootstrap for all screen sizes</li>
@@ -622,219 +505,75 @@
               <li>Product details page with description, weight, and pricing</li>
             </ul>
             <div class="image-section-5">
-              <img src="/assets/gr/img1.jpeg" alt="img" id="cr-img1" class="active">
-              <img src="/assets/gr/img2.jpeg" alt="img" id="cr-img2">
-              <img src="/assets/gr/img3.jpeg" alt="img" id="cr-img3">
-              <img src="/assets/gr/img4.jpeg" alt="img" id="cr-img4">
-              <img src="/assets/gr/img5.jpeg" alt="img" id="cr-img5">
-              <!-- <img src="/assets/meeshow/img6.jpg" alt="img" id="cr-img6"> -->
+              <img src="/assets/gr/img1.jpeg" alt="img" class="active">
+              <img src="/assets/gr/img2.jpeg" alt="img">
+              <img src="/assets/gr/img3.jpeg" alt="img">
+              <img src="/assets/gr/img4.jpeg" alt="img">
+              <img src="/assets/gr/img5.jpeg" alt="img">
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
-
+  <!-- ===== SCRIPTS ===== -->
   <script>
-    function nextSlide(btn) {
-      const carousel = btn.parentElement.querySelector('.carousel-images');
-      const totalImages = carousel.children.length;
-      const imgWidth = carousel.clientWidth;
-      const currentIndex = Math.round(Math.abs(carousel.style.transform.replace('translateX(', '').replace('%)', '')) / 100) || 0;
-      const nextIndex = (currentIndex + 1) % totalImages;
-      carousel.style.transform = `translateX(-${nextIndex * 100}%)`;
-    }
+    /* ---- Hamburger toggle ---- */
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mainNav = document.getElementById('mainNav');
 
-    function prevSlide(btn) {
-      const carousel = btn.parentElement.querySelector('.carousel-images');
-      const totalImages = carousel.children.length;
-      const imgWidth = carousel.clientWidth;
-      const currentIndex = Math.round(Math.abs(carousel.style.transform.replace('translateX(', '').replace('%)', '')) / 100) || 0;
-      const prevIndex = (currentIndex - 1 + totalImages) % totalImages;
-      carousel.style.transform = `translateX(-${prevIndex * 100}%)`;
-    }
-
-    // Initialize all carousels
-    document.querySelectorAll('.carousel-images').forEach(carousel => {
-      carousel.style.transform = 'translateX(0%)';
+    hamburgerBtn.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+      hamburgerBtn.classList.toggle('active');
     });
+
+    // Close nav when a link is clicked (mobile)
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        hamburgerBtn.classList.remove('active');
+      });
+    });
+
+    /* ---- Image slideshows ---- */
+    function startSlideshow(selector) {
+      const imgs = document.querySelectorAll(selector + ' img');
+      if (!imgs.length) return;
+      let current = 0;
+      setInterval(() => {
+        imgs[current].classList.remove('active');
+        current = (current + 1) % imgs.length;
+        imgs[current].classList.add('active');
+      }, 3000);
+    }
+
+    startSlideshow('.image-section-1');
+    startSlideshow('.image-section-2');
+    startSlideshow('.image-section-3');
+    startSlideshow('.image-section-4');
+    startSlideshow('.image-section-5');
+
+    /* ---- Project toggles ---- */
+    function toggleProject(divId, btnId) {
+      const div = document.getElementById(divId);
+      const btn = document.getElementById(btnId);
+      if (div.style.display === 'block') {
+        div.style.display = 'none';
+        btn.innerHTML = 'more information <i class="fa-solid fa-caret-down"></i>';
+      } else {
+        div.style.display = 'block';
+        btn.innerHTML = 'less information <i class="fa-solid fa-caret-up"></i>';
+      }
+    }
+
+    function showDiv()  { toggleProject('hiddenDiv',  'more-info');  }
+    function showDiv1() { toggleProject('hiddenDiv1', 'more-info1'); }
+    function showDiv2() { toggleProject('hiddenDiv2', 'more-info2'); }
+    function showDiv3() { toggleProject('hiddenDiv3', 'more-info3'); }
+    function showDiv4() { toggleProject('hiddenDiv4', 'more-info4'); }
   </script>
-
-
-  <script>
-
-    const images1 = document.querySelectorAll('.image-section-1 img');
-    let current1 = 0;
-
-    setInterval(() => {
-      // Hide current
-      images1[current1].classList.remove('active');
-
-      // Move to next
-      current1 = (current1 + 1) % images1.length;
-
-      // Show next
-      images1[current1].classList.add('active');
-    }, 3000);
-
-
-
-
-
-    const images2 = document.querySelectorAll('.image-section-2 img');
-    let current2 = 0;
-
-    setInterval(() => {
-      // Hide current
-      images2[current2].classList.remove('active');
-
-      // Move to next
-      current2 = (current2 + 1) % images2.length;
-
-      // Show next
-      images2[current2].classList.add('active');
-    }, 3000);
-
-
-
-
-
-    const images3 = document.querySelectorAll('.image-section-3 img');
-    let current3 = 0;
-
-    setInterval(() => {
-      // Hide current
-      images3[current3].classList.remove('active');
-
-      // Move to next
-      current3 = (current3 + 1) % images3.length;
-
-      // Show next
-      images3[current3].classList.add('active');
-    }, 3000);
-
-
-
-
-
-
-    const images4 = document.querySelectorAll('.image-section-4 img');
-    let current4 = 0;
-
-    setInterval(() => {
-      // Hide current
-      images4[current4].classList.remove('active');
-
-      // Move to next
-      current4 = (current4 + 1) % images4.length;
-
-      // Show next
-      images4[current4].classList.add('active');
-    }, 3000);
-
-
-
-
-
-
-
-    const images5 = document.querySelectorAll('.image-section-5 img');
-    let current5 = 0;
-
-    setInterval(() => {
-      // Hide current
-      images5[current5].classList.remove('active');
-
-      // Move to next
-      current5 = (current5 + 1) % images5.length;
-
-      // Show next
-      images5[current5].classList.add('active');
-    }, 3000);
-
-
-
-
-
-    function showDiv() {
-
-      var a = document.getElementById("hiddenDiv");
-      var b = document.getElementById("more-info")
-
-      if (a.style.display == "block") {
-        a.style.display = "none";
-        b.innerHTML = 'more information <i class="fa-solid fa-caret-down"></i>';
-      } else {
-        a.style.display = "block";
-        b.innerHTML = 'less infomation <i class="fa-solid fa-caret-up"></i>';
-      }
-    }
-
-
-    function showDiv1() {
-
-      var a = document.getElementById("hiddenDiv1");
-      var b = document.getElementById("more-info1")
-
-      if (a.style.display == "block") {
-        a.style.display = "none";
-        b.innerHTML = 'more information <i class="fa-solid fa-caret-down"></i>';
-      } else {
-        a.style.display = "block";
-        b.innerHTML = 'less infomation <i class="fa-solid fa-caret-up"></i>';
-      }
-    }
-
-
-    function showDiv2() {
-
-      var a = document.getElementById("hiddenDiv2");
-      var b = document.getElementById("more-info2")
-
-      if (a.style.display == "block") {
-        a.style.display = "none";
-        b.innerHTML = 'more information <i class="fa-solid fa-caret-down"></i>';
-      } else {
-        a.style.display = "block";
-        b.innerHTML = 'less infomation <i class="fa-solid fa-caret-up"></i>';
-      }
-    }
-
-
-    function showDiv3() {
-
-      var a = document.getElementById("hiddenDiv3");
-      var b = document.getElementById("more-info3")
-
-      if (a.style.display == "block") {
-        a.style.display = "none";
-        b.innerHTML = 'more information <i class="fa-solid fa-caret-down"></i>';
-      } else {
-        a.style.display = "block";
-        b.innerHTML = 'less infomation <i class="fa-solid fa-caret-up"></i>';
-      }
-    }
-
-    function showDiv4() {
-
-      var a = document.getElementById("hiddenDiv4");
-      var b = document.getElementById("more-info4")
-
-      if (a.style.display == "block") {
-        a.style.display = "none";
-        b.innerHTML = 'more information <i class="fa-solid fa-caret-down"></i>';
-      } else {
-        a.style.display = "block";
-        b.innerHTML = 'less infomation <i class="fa-solid fa-caret-up"></i>';
-      }
-    }
-
-  </script>
-
-
-
 
 </body>
-
 </html>
